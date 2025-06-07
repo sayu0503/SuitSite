@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- meta情報 -->
+  <title>ExciteCode</title>
+  <meta name="description" content="ExciteCodeは、伝統あるテーラーだからできる、芯地や裏地など、細部へこだわります。わたしたちはワンランク上のオーダースーツをお約束します。">
+  <meta name="keywords" content="ExciteCode,オーダーメイドスーツ,ネクタイ">
+  <!-- ogp -->
+  <meta property="og:title" content="ExciteCode">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://hogehoge.com/">
+  <meta property="og:image" content="http://hogehoge.com./assets/images/common/ogp-img.jpg">
+  <meta property="og:site_name" content="ExciteCode">
+  <meta property="og:description" content="ExciteCodeは、伝統あるテーラーだからできる、芯地や裏地など、細部へこだわります。わたしたちはワンランク上のオーダースーツをお約束します。">
+  <meta name="twitter:card" content="summary">
+  <!-- ファビコン -->
+  <link rel="icon" href="../assets/images/common/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/images/common/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200:300;400&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <header class="header js-header">
+    <div class="header__inner">
+      <h1 class="header__name">
+        <a href="index.html" class="header__logo-link">
+          <img src="./assets/images/common/header-logo.svg" alt="ExciteCode" class="header__logo">
+        </a>
+      </h1>
+      <nav class="header__nav md-none">
+        <ul class="header__items">
+          <li class="header__item">
+            <a href="index.html#about" class="header__link">About</a>
+          </li>
+          <li class="header__item">
+            <a href="index.html#service" class="header__link">Service</a>
+          </li>
+          <li class="header__item">
+            <a href="index.html#news" class="header__link">News</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="header__contact contact-button md-none">Contact</a>
+    </div>
+
+    <!--ハンバーガー-->
+    <div class="hamburger js-hamburger md-show">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!--ドロワー-->
+    <div class="drawer-menu js-drawer ">
+      <div class="drawer-menu__inner">
+        <ul class="drawer-menu__items">
+          <li class="drawer-menu__item">
+            <a href="index.html#about" class="drawer-menu__link heading heading--drawer">About</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a href="index.html#service" class="drawer-menu__link heading heading--drawer">Service</a>
+          </li>
+          <li class="drawer-menu__item">
+            <a href="index.html#news" class="drawer-menu__link heading heading--drawer">News</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="drawer-menu__contact contact-button contact-button--wide">Contact</a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <!--メインビュー-->
+    <section class="mv">
+      <div class="mv__inner">
+        <div class="mv__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="./assets/images/common/contact-mv-img.jpg" media="(min-width: 1024px)">
+                <img src="./assets/images/common/contact-mv-sp-img.jpg" alt="チェック柄のスーツにベストとネクタイを締めたマネキン">
+              </picture>
+            </div>
+          </div>
+          <div class="mv__title mv-contact__title--center">
+            <h2 class="mv__title-large mv__title-large-contact">Contact</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact-lower">
+      <div class="contact-lower__inner">
+        <p class="contact-lower__text">当店へのお問い合わせは下記フォームより受け付けております。<br class="br-pc">
+          担当者が確認後、折り返しご連絡させていただきます。</p>
+        <form action="mail.php" method="POST" class="contact__form">
+          <div class="contact__item">
+            <div class="contact__label">
+              <label for="name" class="contact__label-text">お名前<span class="red">*</span></label>
+              <input id="name" type="text" class="contact__input" placeholder="仕立&emsp;一郎" required>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__label">
+              <label for="mail" class="contact__label-text">メールアドレス<span class="red">*</span></label>
+              <input id="mail" type="email" class="contact__input" placeholder="excitecode@suit.co.jp" required>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__label"><span class="must">お問い合わせの種類<span class="red">*</span></span></div>
+            <div class="data-radio-wrap">
+              <label for="odermaid">
+                <input type="radio" id="odermaid" name="kinds" checked>
+                <span>オーダーメイドスーツ</span>
+              </label>
+              <label for="item">
+                <input type="radio" id="item" name="kinds">
+                <span>スーツ以外のアイテム</span>
+              </label>
+              <label for="other">
+                <input type="radio" id="other" name="kinds">
+                <span>その他</span>
+              </label>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__label">
+              <label for="contents" class="contact__label-text flex-start">お問い合わせ内容<span class="red">*</span></label>
+              <textarea id="contents" class="contact__textarea" placeholder="入力してください" required></textarea>
+            </div>
+          </div>
+          <div class="form__button shadow-button ">
+            <input type="submit" class="button" value="送信">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <small class="footer__copyright">&copy;ExciteCode&nbsp;all&nbsp;rights&nbsp;reserved</small>
+  </footer>
+</body>
+
+</html>

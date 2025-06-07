@@ -24,7 +24,7 @@ const rename = require('gulp-rename');//ファイル名変更
 const srcPath = {
   css: "../src/sass/**/*.scss",
   js: "../src/js/**/*",
-  img: "../src/images/**/*",
+  img: "../src./assets/images/common/**/*",
   html: ["../src/**/*.html", "!./node_modules/**"],
 };
 
@@ -33,7 +33,7 @@ const destPath = {
   all: "../dist/**/*",
   css: "../dist/assets/css/",
   js: "../dist/assets/js/",
-  img: "../dist/assets/images/",
+  img: "../dist/assets./assets/images/common/",
   html: "../dist/",
 };
 
